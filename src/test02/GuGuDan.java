@@ -1,4 +1,4 @@
-package Test02;
+package test02;
 
 public class GuGuDan {
 

@@ -1,4 +1,4 @@
-package Test02;
+package test02;
 
 public class Loop3 {
 	public static void main(String[] args) {
