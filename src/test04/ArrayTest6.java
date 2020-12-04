@@ -7,18 +7,18 @@ public class ArrayTest6 {
         menus[1] = "치킨";
         menus[2] = "피자";
         
-        for(int i=0 ; i<menus.length ; i++) {
+        
         String[] tmpMenus = menus;
         menus = new String[4];
-        menus[0] = tmpMenus[0];
-        menus[1] = tmpMenus[1];
-        menus[2] = tmpMenus[2];
-        menus[3] = "맥주";
         
-       
-        	     	
-        	System.out.println(menus[i]);
-        
+        for(int i=0;i<tmpMenus.length ; i++) {
+        	menus[i]=tmpMenus[i]; 
         }
-	}
+        
+              menus[3] = "맥주";
+        
+            for(int i=0 ; i<menus.length ; i++) {
+        	System.out.println(menus[i]);
+            }
+        }
 }
