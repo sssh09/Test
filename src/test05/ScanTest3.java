@@ -8,10 +8,10 @@ public class ScanTest3 {
 		System.out.print("가장 좋아하는 축구 선수는 : ");
 		String player = scan.nextLine();
 		
-		String[] names = {"송흥민", "손흔민", "송흥밍","손날두"};
-	for ( int i=0; i<names.length ; i++) {
-		if(names[i].equals(player)) {
-			System.out.println("손흥민을 검색하신건가요?");
+		String[] names = {"송흥민","손흔민","송흥밍","손날두"};
+		for(int i=0;i<names.length;i++) {
+			if(names[i].equals(player)) {
+				System.out.println("손흥민을 검색하신건가요?");
 			}
 		}
 	}

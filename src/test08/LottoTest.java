@@ -12,13 +12,13 @@ public class LottoTest {
 		System.out.print("숫자를 ,를 구분자로 입력해주세요 : ");
 		String str = s.nextLine();
 		String[] strs = str.split(",");
-
+		
 		int[] myLotto = new int[strs.length];
 		for(int i=0;i<strs.length;i++) {
 			myLotto[i] = Integer.parseInt(strs[i]);
 		}
-
-
+		
+		
 		int[] lotto = new int[6];
 		Random r = new Random();
 		for(int i=0;i<lotto.length;i++) {
@@ -30,13 +30,13 @@ public class LottoTest {
 				}
 			}
 		}
-
+		
 		System.out.print("니가 찍은 번호 : [");
 		for(int i=0;i<6;i++) {
 			System.out.print(myLotto[i] + ",");
 		}
 		System.out.println("]");
-
+		
 		System.out.print("당첨 번호 : [");
 		for(int i=0;i<6;i++) {
 			System.out.print(lotto[i] + ",");
@@ -44,3 +44,7 @@ public class LottoTest {
 		System.out.println("]");
 	}
 }
+
+
+
+

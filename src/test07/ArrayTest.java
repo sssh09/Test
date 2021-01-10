@@ -1,21 +1,14 @@
 package test07;
 
 public class ArrayTest {
-	public static void main(String[] args) {
+
+	public static void mian(String[] args) {
 		int[] nums = new int[5];
-		/*
-		 * 반복문을 사용해서
-		 * nums[0] = 5
-		 * nums[1] = 10
-		 * nums[2] = 15
-		 * nums[3] = 20
-		 * nums[4] = 25
-		 */
-		for ( int i=0 ; i<nums.length ; i++ ) {
-			nums[i] = (i+1)*5 ;
-			}
-		for (int i = 0; i < nums.length; i++) {
+		for(int i=0;i<5;i++) {
+			nums[i] = (i+1)*5;
+		}
+		for(int i=0;i<5;i++) {
 			System.out.println(nums[i]);
 		}
-    	}
+	}
 }
